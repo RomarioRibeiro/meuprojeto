@@ -1,0 +1,26 @@
+<!-- <div class="alert alert-dark" role="alert" *ngIf="adicionado">
+  Funcionario Adicionado <strong>{{nome}}</strong>
+</div> -->
+
+<!-- <div class="mb-3">
+  <label>Nome</label>
+  <input type="text" class="form-control" [(ngModel)]="nome" (focus)="adicionado = false" [appCampoColorido]="'red'" #campo="campoColorido"> -->
+
+  <!-- <input type="text" class="form-control" (input)="alterarNome($event)" [value]="nome"> -->
+  <!-- <input type="text" class="form-control" #nomeInput> -->
+<!-- </div> -->
+
+<!-- <button type="button" class="btn btn-primary" (click)="adicionar()" [disabled]="nome.length == 0">Adicionar</button> -->
+<!-- <button type="button" class="btn btn-info" (click)="campo.colorir()">Colorir</button>
+<button type="button" class="btn btn-info" (click)="campo.descolorir()">Descolorir</button> -->
+<!-- <button type="button" class="btn btn-primary" (click)="adicionar(nomeInput.value)" >Adicionar</button> -->
+<div class="container">
+
+  <div class="form-group">
+    <label>Nome</label>
+    <input type="text" class="form-control" #nome>
+  </div>
+
+  <button type="button" class="btn btn-primary"
+  (click)="adicionar(nome.value); nome.value = ''" style="margin-top:5px ;">Adicionar</button>
+</div>
